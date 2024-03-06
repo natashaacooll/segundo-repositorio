@@ -2,10 +2,23 @@
     margin: 0;
     padding: 0;
 }
+
 header {
-   
     background-color: rgba(189, 34, 116, 0.678);
     color: blue;
+}
+
+.cabecalho {
+    background-color: rgb(23, 172, 152);
+    color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.cabecalho-imagem {
+    width: 20%;
 }
 
 .cabecalho-lista-item{
