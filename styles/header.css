@@ -1,4 +1,4 @@
-cabecalho {
+.cabecalho {
     background-color: var(--cor-principal);
     display: flex;
     justify-content: space-between;
@@ -42,4 +42,30 @@ cabecalho {
     display: block;
 }
 
-.container__botao 
+.container__botao {
+    display: none;
+}
+
+.cabecalho-lista-titulo {
+    padding: 1em;
+    color: var(--preto);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cabecalho-lista-item{
+    padding: 1em;
+    color: var(--cor-principal);
+}
+
+ .continer-titulo {
+   display: none;
+}
+
+.menu__lista-item {
+     background: var(--cor-principal);
+     color: var(--laranja);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;;
+
+}
