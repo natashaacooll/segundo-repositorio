@@ -21,5 +21,14 @@ cartao.innerHTML = `
 
 `
 
+let respostaEstaVisivel = false;
+
+function viraCartao () {
+    respostaEstaVisivel = !variavelEstaVisivel;
+    cartao.classList.toggle('active', viraCartao)
+}
+
+    cartao.addEventListener('click', viraCartao);
+
     flashcard.appendChild(cartao);
 }
