@@ -56,7 +56,7 @@ main {
 
 .cabecalho-lista-titulo {
     padding: 1em;
-    color: var(--preto);
+    color: var(--cor-branco);
     font-weight: 700;
     text-transform: uppercase;
 }
