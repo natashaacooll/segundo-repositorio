@@ -3,247 +3,121 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal</title>
-    <link rel="stylesheet" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-      
-    <link rel="stylesheet" href="style.css">
-   
+    <title>Tropicália</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="container">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
-                <span class="cabecalho__menu  container__imagem"> </span>
-            </label>
+    <header class=" p-5">
 
-            <ul class="cabecalho-lista">
-                <li class="cabecalho-lista-titulo"> produtos </li>
-                <li class="cabecalho-lista-item"> <a href="#" class="menu__lista-item"> Arrrumar</a></li>
-                <li class="cabecalho-lista-item"> <a href="#" class="menu__lista-item"> Arrrumar</a></li>
-                <li class="cabecalho-lista-item"><a href="#" class="menu__lista-it9em"> Contato </a></li>
-            </ul>
-
-            <img class="cabecalho-imagem  container__imagem" src="img/logo.png" alt="logo AluraStart">
-            <h1 class="container-titulo"> Nati Pescados </h1>
-        </div>
-      
-        <ul class="opcoes">
-            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
-            <label for="opcoes-menu">
-                <li class="opcoes__item">CATEGORIAS REVER</li>
-            </label>
-
-            <ul class="cabecalho-lista">
-                <li class="cabecalho-lista-item">
-                    <a href="#" class="menu__lista-item">Opção 1 </a>
-                </li>
-                <li class="cabecalho-lista-item">
-                    <a href="#" class="menu__lista-item">Opção 2 </a>
-                </li>
-                <li class="cabecalho-lista-item">
-                    <a href="#" class="menu__lista-item">Opção 3 </a>
-                </li>
-        </ul>
-
-        <li class="opcoes__item"><a href="#" class="opcoes__link">  Escola  </a> </li>
-        <li class="opcoes__item"><a href="#" class="opcoes__link">  Estudante  </a></li>
-
-    </ul>
-
-    <div class="container" id="container__left" >
-        <a href="#"> <img id="favorito-header" class="cabecalho-imagem cabecalho__favorito header__favorito" src="./img/favoritos.svg" alt="Meus favoritos"> </a>
-        <a href="#" class="container__link" >
-            <img class="cabecalho-imagem" src="./img/compras.svg" alt="Carrinho de compras">
-            <p class="container__texto"> Minha Sacola </p>
-        </a>
-        <a href="#" class="container__link" >
-            <img  class="cabecalho-imagem"  src="img/usuario.svg" alt="Meu Perfil">
-            <p class="container__texto" >Meu Perfil</p>
-        </a>
-    </div>
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo.png" alt="Logotipo da Tropicália" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>          
+        </nav>
         
+        <div id="acessibilidade" class="menu-acessibilidade" >
+            <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">Acessibilidade</button>
+            <div id="opcoes-acessibilidade" >
+                <button  id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
+                <button  id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+            </div>
+        </div>
+       
     </header>
 
-    <main>
-        <section class="escola">
-            <div class="escola-div-conteudo">
-                <h2 class="escola-titulo"> Sobre a Escola </h2>
-                <p class="escola-texto-um"> A Escola Alura foi fundada em 2010 e tem como objetivo ensinar Pensamento
-                    Computacional, através de Programação. </p>
-                <p class="escola-texto-dois">A turma mais estudiosa e famosa é a segunda série, turma E. Nós somos super
-                    unidos e a turma favorita por todos os professores que nos ajudam!</p>
-            </div>
-            <img src="img/Online learning-amico.svg" alt="imagem da escola" class="escola-imagem">
-            <p class="escola-texto-um"> A Escola Alura foi fundada em 2010 e tem como objetivo ensinar Pensamento
-                Computacional, através de Programação. </p>
-            <p class="escola-texto-dois">A turma mais estudiosa e famosa é a segunda série, turma E. Nós somos super
-                unidos e a turma favorita por todos os professores que nos ajudam!</p>
-        </div>
-        <img src="img/Online learning-amico.svg" alt="imagem da escola" class="escola-imagem">
-        </section>
 
-        <section id="flashcard" >
-            <!--
-            <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Missão</h3>
-                    
-                    <div class="cartao__conteudo__pergunta">
-                        <p>Saiba qual é a missão de nossa empresa!</p>
-                    </div>
-                    
-                    <div class="cartao__conteudo__resposta">
-                        <p>Nossa missão é ... </p>
-                    </div>
-                </div>
-            </article>
-            <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Visão</h3>
-                    
-                    <div class="cartao__conteudo__pergunta">
-                        <p>Saiba qual é a Visão de nossa empresa!</p>
-                    </div>
-                    
-                    <div class="cartao__conteudo__resposta">
-                        <p>Nossa Visão é ... </p>
-                    </div>
-                </div>
-                
-            </article>
-            <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Valores</h3>
-                    
-                    <div class="cartao__conteudo__pergunta">
-                        <p>Saiba quais são os valores de nossa empresa! </p>
-                    </div>
-                    
-                    <div class="cartao__conteudo__resposta">
-                        <p>Nossos valores são ... </p>
-                    </div>
-                </div>
-            </article>
-            -->
-            
-        </section>
+    <main class="container my-5">
 
-        <section class="carrossel">
-            <h2 class="carrossel__titulo">nossos produtos</h2>
-            
-            <h2 class="carrossel__titulo">Nossos Serviços</h2>
-
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="./img/peixesss.jpeg" alt="peixes na bancada"></div>
-                    <div class="swiper-slide"><img src="./img/a-melhor-banca-de-peixe.jpg" alt="peixes limpos"> </div>
-                    <div class="swiper-slide"><img src="./img/camarao e peixe.jpeg" alt="peixe inteiro"></div>
-                    <div class="swiper-slide"><img src="./img/camarao.jpg" alt="peixes na bancada"></div>
-                    <div class="swiper-slide"><img src="./img/peixes.jpeg" alt="peixes na bancada"></div>
-                    <div class="swiper-slide"><img src="./img/peixes variedades.jpeg" alt="peixes na bancada"></div>
-                    <div class="swiper-slide"><img src="./img/peixes fresco.jpeg" alt="peixes na bancada"></div>
-                    <div class="swiper-slide"><img src="./img/file.jpeg" alt="peixes na bancada"></div>
-                    <div class="swiper-slide"><img src="./img/CAMARÃO branco.webp" alt="peixes na bancada"></div>
-                    <div class="swiper-slide"><img src="./img/camaroes.jpeg" alt="peixes na bancada"></div>
-                    ...
-                    
-                    
-                    
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                    <img src="img/logo-2.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
+                        height="278" loading="lazy">
+                    <a href="#tropicalia"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        conhecer!</a>
                 </div>
-            
-            </div>
-            
-            <!-- Promoção - Melhor Produto -->
-            <div class="card">
-                <div class="card__descricao">
-                    <div class="descricao">
-                        <h3 class="descricao__titulo">Talvez você também se interesse por... </h3>
-                        <h2 class="descricao__titulo-produto">variedades de frutos do mar </h2>
-                        <p class="descricao__texto"> Curso de venda e peixes </p>
-                    </div>
-                    
-                    <img src="./img/CAMARÃO branco.webp" alt="Foto da promoção" class="descricao__imagem">
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="card__botoes">
-                    <ul class="botoes">
-                        <li class="botoes__item">
-                            <img src="./img/favoritos.svg" alt="Favoritar produto">
-                        </li>
-                        <li class="botoes__item"> 
-                            <img src="./img/compras.svg" alt="Adicionar no carrinho de compras">
-                        </li>
-                    </ul>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-                    <a href="#" class="botoes__ancora">Saiba mais</a>
-                </div>
-            </div>
-        
-        
-        
-        
-        </section>
-
-        <section class="estudante">
-            <h2 class="estudante-titulo">Quem sou</h2>
-            <div class="estudante-div">
-                <img src="" alt="" class="estudante-imagem">
-                <h3 class="estudante-nome"> Natasha Costa Dacooll </h3>
-                <a href="https://https://github.dev/natashaacooll/segundo-repositorio"> <img src="img/github.svg"
-                        alt="icone do github" class="estudante-icone"> </a>
-                <a href="https://https://www.instagram.com/natash_costa?r=nametag"> <img src="img/instagram.svg" alt="icone do instagram"
-                        class="estudante-icone"> </a>
-                <a href="https://https://wa.me/5541998819681"> <img
-                        src="img/whatsapp.svg" alt="icone do whatsapp" class="estudante-icone"> </a>
-                <a href="https://github.dev/natashaacooll/segundo-repositorio"> <img src="img/github.svg" alt="icone do github" class="estudante-icone"> </a>
-                <a href="https://https://www.instagram.com/natash_costa?r=nametag"> <img src="img/instagram.svg" alt="icone do instagram" class="estudante-icone"> </a>
-                <a href="https://https://https://wa.me/5541998819681"> <img src="img/whatsapp.svg" alt="icone do whatsapp" class="estudante-icone"> </a>      
             </div>
         </section>
-        
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center ">
+                  <div class="col-5">
+                    <h2>O que foi a Tropicália?</h2>
+                    <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural
+                        brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento
+                        abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes plásticas, e
+                        teve como principal característica a mistura de elementos da cultura brasileira tradicional com
+                        influências estrangeiras, especialmente do rock e da música pop.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <footer class="rodape">
-        <img src="img/logo.png" alt="logo da alura" class="rodape-imagem">
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
+    <script src="script.js"></script>
 
-    <script src="app.js" ></script>
-    <script src="missaoVisaoValores.js" ></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 1,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-        });
-    </script>
-    
 </body>
 
 </html>
